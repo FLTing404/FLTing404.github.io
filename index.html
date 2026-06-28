@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liting Fang | Software Engineering</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#hero" class="nav-logo">LF</a>
+    <ul class="nav-links">
+      <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+      <li><a href="#experience" data-en="Experience" data-zh="经历">Experience</a></li>
+      <li><a href="#projects" data-en="Projects" data-zh="项目">Projects</a></li>
+      <li><a href="#publications" data-en="Publications" data-zh="论文">Publications</a></li>
+      <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
+    </ul>
+    <button class="lang-toggle" id="langToggle" title="Switch Language">中文</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting" data-en="Hi, I'm" data-zh="你好，我是">Hi, I'm</p>
+        <h1 class="hero-name">Liting Fang <span class="hero-name-zh">方李庭</span></h1>
+        <p class="hero-title" data-en="Undergraduate in Software Engineering" data-zh="软件工程 本科在读">Undergraduate in Software Engineering</p>
+        <p class="hero-school" data-en="Hangzhou City University" data-zh="浙大城市学院">Hangzhou City University</p>
+        <p class="hero-desc" data-en="Passionate about Medical AI, Full-stack Development, and Data Visualization. 3+ years of interdisciplinary research and engineering practice." data-zh="专注于医疗AI、全栈开发与数据可视化。拥有3年以上跨学科科研与工程实践经历。">Passionate about Medical AI, Full-stack Development, and Data Visualization. 3+ years of interdisciplinary research and engineering practice.</p>
+        <div class="hero-links">
+          <a href="https://github.com/FLTing404" target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://orcid.org/0009-0003-6122-9087" target="_blank" class="btn btn-outline">
+            ORCID
+          </a>
+          <a href="mailto:flting.amanda@gmail.com" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="img/avatar.jpg" alt="Liting Fang" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 data-en="Education" data-zh="教育背景">Education</h3>
+          <div class="timeline-item">
+            <span class="timeline-date">2023.9 - Present</span>
+            <p class="timeline-title" data-en="B.E. in Software Engineering" data-zh="软件工程 本科">B.E. in Software Engineering</p>
+            <p class="timeline-sub" data-en="Hangzhou City University (Zhejiang University City College)" data-zh="浙大城市学院">Hangzhou City University (Zhejiang University City College)</p>
+            <p class="timeline-detail" data-en="GPA: 4.21/5 (Top 5%)" data-zh="GPA：4.21/5（专业前5%）">GPA: 4.21/5 (Top 5%)</p>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3 data-en="Honors & Awards" data-zh="荣誉奖项">Honors & Awards</h3>
+          <ul class="awards-list">
+            <li data-en="Zhejiang Provincial Government Scholarship" data-zh="浙江省政府奖学金">Zhejiang Provincial Government Scholarship</li>
+            <li data-en="1st Prize, China Mobile Cup Zhejiang AI Competition" data-zh="中国移动杯浙江省大学生人工智能竞赛 一等奖">1st Prize, China Mobile Cup Zhejiang AI Competition</li>
+            <li data-en="National Mathematical Modeling Contest, Provincial 3rd Prize" data-zh="全国大学生数学建模竞赛浙江省 三等奖">National Mathematical Modeling Contest, Provincial 3rd Prize</li>
+            <li data-en="Academic Excellence Scholarship (2nd Class)" data-zh="学业优秀二等奖学金">Academic Excellence Scholarship (2nd Class)</li>
+            <li data-en="Outstanding Student Leader" data-zh="优秀学生干部">Outstanding Student Leader</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-en="Experience" data-zh="实习经历">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-block">
+          <span class="timeline-date">2025.10 - 2026.02</span>
+          <h3 class="timeline-title" data-en="Medical AI & Full-stack Developer Intern" data-zh="医疗AI & 全栈开发实习生">Medical AI & Full-stack Developer Intern</h3>
+          <p class="timeline-sub" data-en="National University of Singapore, Alice Lee Centre for Nursing Studies" data-zh="新加坡国立大学护理学院">National University of Singapore, Alice Lee Centre for Nursing Studies</p>
+          <ul class="timeline-details">
+            <li data-en="Independently designed architecture for 3 AI Agents (delirium diagnosis, nursing research teaching, ACT diagnosis), building workflow engines from clinical requirements." data-zh="独立负责谵妄诊断、护理科研教学、ACT诊断3个AI Agent的架构设计，拆解临床需求并构建工作流引擎。">Independently designed architecture for 3 AI Agents (delirium diagnosis, nursing research teaching, ACT diagnosis), building workflow engines from clinical requirements.</li>
+            <li data-en="Full-stack delivery with React & Node.js, designed RESTful APIs with 99.8% data call success rate." data-zh="使用React与Node.js完成前后端开发，设计RESTful接口，数据调用成功率达99.8%。">Full-stack delivery with React & Node.js, designed RESTful APIs with 99.8% data call success rate.</li>
+            <li data-en="Wrote automated test scripts covering 45+ core scenarios; optimized diagnostic logic with 18% consistency improvement." data-zh="编写自动化测试脚本覆盖45+个核心场景，优化多个诊断逻辑，一致率提升18%。">Wrote automated test scripts covering 45+ core scenarios; optimized diagnostic logic with 18% consistency improvement.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-block">
+          <span class="timeline-date">2025.07 - 2025.08</span>
+          <h3 class="timeline-title" data-en="Algorithm Intern" data-zh="算法实习生">Algorithm Intern</h3>
+          <p class="timeline-sub" data-en="Shanghai Zhita Information Technology Co., Ltd." data-zh="上海智塔信息科技有限公司">Shanghai Zhita Information Technology Co., Ltd.</p>
+          <ul class="timeline-details">
+            <li data-en="Extracted features from 50K+ wearable device records, built composite calculation models for 6 core business metrics with 96%+ accuracy." data-zh="从5万+条穿戴设备数据中提取特征，构建多指标合成计算模型，字段准确率超96%。">Extracted features from 50K+ wearable device records, built composite calculation models for 6 core business metrics with 96%+ accuracy.</li>
+            <li data-en="Co-designed a 'data dummy' simulation model supporting 100K concurrent user behavior generation for stress testing." data-zh="合作设计'数据假人'模型，支持10万级并发用户行为生成，支撑系统压力测试。">Co-designed a "data dummy" simulation model supporting 100K concurrent user behavior generation for stress testing.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-block">
+          <span class="timeline-date">2024.07 - 2024.08</span>
+          <h3 class="timeline-title" data-en="Full-stack Intern" data-zh="全栈实习生">Full-stack Intern</h3>
+          <p class="timeline-sub" data-en="Zhejiang Xinchan Technology Co., Ltd." data-zh="浙江信产技术有限公司">Zhejiang Xinchan Technology Co., Ltd.</p>
+          <ul class="timeline-details">
+            <li data-en="Replicated company portal website with 7 core modules and responsive mobile layout using HTML/CSS/JS and Flask." data-zh="运用HTML、CSS、JavaScript及Python Flask，完整复刻公司门户网站，实现7个核心功能模块和移动端自适应布局。">Replicated company portal website with 7 core modules and responsive mobile layout using HTML/CSS/JS and Flask.</li>
+            <li data-en="Refactored front-end rendering logic, reducing page response time to under 1.2s with 25% UX score improvement." data-zh="重构前端渲染逻辑，页面交互响应时间降低至1.2秒内，体验评分提升25%。">Refactored front-end rendering logic, reducing page response time to under 1.2s with 25% UX score improvement.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-block">
+          <span class="timeline-date">2023.07 - 2023.08</span>
+          <h3 class="timeline-title" data-en="Big Data Research Intern" data-zh="大数据研究院实习生">Big Data Research Intern</h3>
+          <p class="timeline-sub" data-en="Zhejiang Posts & Telecommunications Engineering Co., Ltd." data-zh="浙江省邮电工程建设有限公司">Zhejiang Posts & Telecommunications Engineering Co., Ltd.</p>
+          <ul class="timeline-details">
+            <li data-en="Cleaned and standardized 100K+ equipment monitoring records; built high-availability datasets." data-zh="对机房空调运行数据进行清洗标准化，处理10万+条记录，构建高可用数据集。">Cleaned and standardized 100K+ equipment monitoring records; built high-availability datasets.</li>
+            <li data-en="Created 6 types of visualization dashboards; identified 3 recurring risk patterns to improve monitoring strategies." data-zh="制作6类可视化分析图表，识别出3类重复性风险，推动优化监控策略。">Created 6 types of visualization dashboards; identified 3 recurring risk patterns to improve monitoring strategies.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title" data-en="Research Projects" data-zh="项目经历">Research Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-tag" data-en="National Innovation Project (Recommended)" data-zh="国家级大创推荐">National Innovation Project (Recommended)</div>
+          <h3 data-en="Cancer Pathology Image Analysis via Superpixel Segmentation and Self-Calibrated Enhancement" data-zh="基于超像素分割与自校准增强的癌症病理图像分析">Cancer Pathology Image Analysis via Superpixel Segmentation and Self-Calibrated Enhancement</h3>
+          <span class="project-role" data-en="Project Lead | 2024.06 - Present" data-zh="项目负责人 | 2024.06 - 至今">Project Lead | 2024.06 - Present</span>
+          <ul>
+            <li data-en="Built an intelligent interactive visual analytics system for pathology images; published at CCF-A and CCF-C conferences." data-zh="研发智能交互可视化系统，成果发表于CCF-A类会议与C类会议。">Built an intelligent interactive visual analytics system for pathology images; published at CCF-A and CCF-C conferences.</li>
+            <li data-en="Designed multi-scale linked visual analysis architecture enabling seamless zoom from billion-pixel whole slides to single-cell level; improved annotation efficiency by ~45%." data-zh="设计多尺度联动可视分析架构，医生对阳性区域标注效率提升约45%。">Designed multi-scale linked visual analysis architecture enabling seamless zoom from billion-pixel whole slides to single-cell level; improved annotation efficiency by ~45%.</li>
+            <li data-en="Optimized inference pipeline, reducing full-size image analysis from 8 min to 65 sec." data-zh="优化推理流水线，使单张全尺寸图像分析时间从8分钟降至65秒。">Optimized inference pipeline, reducing full-size image analysis from 8 min to 65 sec.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3 data-en="PD-L1 Cancer Pathology Multi-scale Analysis & Visualization" data-zh="PD-L1癌症病理图像多尺度分析与可视化研究">PD-L1 Cancer Pathology Multi-scale Analysis & Visualization</h3>
+          <span class="project-role" data-en="Core Member | 2026.02 - Present" data-zh="核心成员 | 2026.02 - 至今">Core Member | 2026.02 - Present</span>
+          <ul>
+            <li data-en="Proposed a cell-aware weakly-supervised distillation & dual-task framework; achieved 0.87 Dice coefficient for PD-L1 positive region segmentation." data-zh="提出细胞感知的弱监督蒸馏与双任务框架，PD-L1阳性区域分割Dice系数达0.87。">Proposed a cell-aware weakly-supervised distillation & dual-task framework; achieved 0.87 Dice coefficient for PD-L1 positive region segmentation.</li>
+            <li data-en="Implemented three-level zoom linkage from macro tissue overview to micro cell membrane staining; reduced average slide reading time by 35%." data-zh="实现三级缩放联动，单次阅片时间平均缩短35%。">Implemented three-level zoom linkage from macro tissue overview to micro cell membrane staining; reduced average slide reading time by 35%.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3 data-en="Cross-national Aging Database Frailty Risk Mining" data-zh="多国老龄化数据库衰弱风险挖掘研究">Cross-national Aging Database Frailty Risk Mining</h3>
+          <span class="project-role" data-en="Core Member | 2025.09 - 2026.04" data-zh="核心成员 | 2025.09 - 2026.04">Core Member | 2025.09 - 2026.04</span>
+          <ul>
+            <li data-en="Unified 237 variables across HRS (US), CHARLS (China), and ELSA (UK) aging databases; improved dataset completeness from 72% to 98% via random forest imputation." data-zh="比对3国237个变量差异，建立统一映射字典；应用随机森林算法插补，完整数据集可用率从72%提升至98%。">Unified 237 variables across HRS (US), CHARLS (China), and ELSA (UK) aging databases; improved dataset completeness from 72% to 98% via random forest imputation.</li>
+            <li data-en="Applied mediation analysis to investigate childhood adversity's impact on elderly frailty; identified 3 key mediation pathways. Paper under review." data-zh="采用中介效应模型探究童年负面经历对老年衰弱的影响，识别出3条关键中介路径，论文在投。">Applied mediation analysis to investigate childhood adversity's impact on elderly frailty; identified 3 key mediation pathways. Paper under review.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag" data-en="National Innovation Project (Recommended)" data-zh="国家级大创推荐">National Innovation Project (Recommended)</div>
+          <h3 data-en="Brain Disease Fiber Topology Recognition via Point Cloud Neural Networks" data-zh="基于点云神经网络的脑疾病纤维拓扑结构识别方法研究">Brain Disease Fiber Topology Recognition via Point Cloud Neural Networks</h3>
+          <span class="project-role" data-en="Project Member | 2023.09 - 2023.11" data-zh="项目成员 | 2023.09 - 2023.11">Project Member | 2023.09 - 2023.11</span>
+          <ul>
+            <li data-en="Preprocessed 120 subject datasets; co-designed a PointNet++ variant achieving 91.3% fiber tract classification accuracy." data-zh="完成120例被试数据预处理，参与设计PointNet++变体网络，纤维束分类准确率达91.3%。">Preprocessed 120 subject datasets; co-designed a PointNet++ variant achieving 91.3% fiber tract classification accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag" data-en="Provincial Innovation Project (Recommended)" data-zh="省级大创推荐">Provincial Innovation Project (Recommended)</div>
+          <h3 data-en="Brain Disease Abnormal Fiber Visualization via Dual-stream Neural Networks" data-zh="基于双流神经网络的脑疾病异常纤维可视化方法研究">Brain Disease Abnormal Fiber Visualization via Dual-stream Neural Networks</h3>
+          <span class="project-role" data-en="Project Member | 2024.09 - Present" data-zh="项目成员 | 2024.09 - 至今">Project Member | 2024.09 - Present</span>
+          <ul>
+            <li data-en="Developed visualization module mapping anomaly probabilities to 3D space; generated interactive fiber staining maps with 92% detection rate across 10 clinical samples." data-zh="将模型输出的异常概率映射至三维空间，生成可交互纤维染色图，在10例临床样本中检出率达92%。">Developed visualization module mapping anomaly probabilities to 3D space; generated interactive fiber staining maps with 92% detection rate across 10 clinical samples.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-en="Publications" data-zh="学术论文">Publications</h2>
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <h3>An Intelligent Interactive Visual Analytics System for Exploring Large and Multi-Scale Pathology Images</h3>
+          <p class="pub-authors">C. Xu, R. Yang, W. Li, <strong>X. Fu, L. Fang</strong>, Z. Feng, X. Zhang, C. Wang, M. Song, ...</p>
+          <p class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 2025</p>
+          <span class="pub-tag">CCF-A</span>
+        </div>
+
+        <div class="pub-item">
+          <h3>Region Graph Refinement for Pathology Image Segmentation with Limited Annotations</h3>
+          <p class="pub-authors">C. Xu, X. Fu, <strong>L. Fang</strong>, R. Yang, Z. Jiang, H. Zeng, L. Sun</p>
+          <p class="pub-venue">Chinese Conference on Pattern Recognition and Computer Vision (PRCV), 254-265, 2025</p>
+          <span class="pub-tag">CCF-C</span>
+        </div>
+
+        <div class="pub-item">
+          <h3>Interactive Visual Exploration of Diabetes Monitoring Data</h3>
+          <p class="pub-authors">C. Xu, J. Huang, Z. Zheng, M. Xu, <strong>L. Fang</strong>, Y. Zeng, T. Zheng, C. Jin, ...</p>
+          <p class="pub-venue">Available at SSRN 5032991</p>
+          <span class="pub-tag">Preprint</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 data-en="Programming & AI" data-zh="编程与AI开发">Programming & AI</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>C</span><span>Java</span><span>HTML5</span><span>PyTorch</span><span>Agent Workflow</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 data-en="Full-stack & Data" data-zh="全栈与数据工程">Full-stack & Data</h3>
+          <div class="skill-tags">
+            <span>React</span><span>Node.js</span><span>RESTful API</span><span>SQL</span><span>Data Visualization</span><span>Agile</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 data-en="Graphics & Visualization" data-zh="计算机图形与可视化">Graphics & Visualization</h3>
+          <div class="skill-tags">
+            <span>OpenGL</span><span>Shader Programming</span><span>ANARI</span><span>Multi-scale Visualization</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 data-en="Certifications" data-zh="资质与证书">Certifications</h3>
+          <div class="skill-tags">
+            <span>CET-6</span><span>CET-4</span><span data-en="NCRE Level 2 (Python)" data-zh="计算机二级（Python）">NCRE Level 2 (Python)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/FLTing404" target="_blank">GitHub</a>
+        <a href="https://orcid.org/0009-0003-6122-9087" target="_blank">ORCID</a>
+        <a href="mailto:flting.amanda@gmail.com">Email</a>
+      </div>
+      <p>&copy; 2026 Liting Fang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
