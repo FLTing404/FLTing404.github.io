@@ -72,10 +72,54 @@
       display: block;
     }
 
+    .cat-sidebar-profiles {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .cat-sidebar-profiles .cat-avatar {
+      width: 140px;
+      height: 140px;
+    }
+
     @media (max-width: 700px) {
-      .profiles { grid-template-columns: 1fr; gap: 24px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-      .cat-avatar { width: 120px; height: 120px; }
+      .sidebar {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+      }
+
+      .cat-sidebar-profiles {
+        flex-direction: row;
+        gap: 32px;
+      }
+
+      .cat-sidebar-profiles .cat-avatar {
+        width: 100px;
+        height: 100px;
+      }
+
+      .profile-card h3 {
+        font-size: 0.95rem;
+      }
+
+      .profile-card p {
+        font-size: 0.8rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .gallery-item {
+        border-radius: 6px;
+      }
+
+      .cats-intro {
+        font-size: 0.88rem;
+      }
     }
   </style>
 </head>
@@ -91,14 +135,14 @@
   <div class="layout">
     <!-- Sidebar reuse: two cat avatars stacked -->
     <aside class="sidebar">
-      <div class="profiles" style="display:flex; flex-direction:column; gap:24px; grid-template-columns:unset; margin-bottom:0; padding:0;">
+      <div class="cat-sidebar-profiles">
         <div class="profile-card">
-          <img src="img/million.jpg" alt="Million" class="cat-avatar" style="width:140px;height:140px;" />
+          <img src="img/million.jpg" alt="Million" class="cat-avatar" />
           <h3>Million <span class="cat-name-zh">方百万</span></h3>
           <p data-en="The millionaire" data-zh="百万富翁本猫">The millionaire</p>
         </div>
         <div class="profile-card">
-          <img src="img/zeyi.jpg" alt="Zeyi" class="cat-avatar" style="width:140px;height:140px;" />
+          <img src="img/zeyi.jpg" alt="Zeyi" class="cat-avatar" />
           <h3>Zeyi <span class="cat-name-zh">白泽一</span></h3>
           <p data-en="The mysterious one" data-zh="神秘猫猫">The mysterious one</p>
         </div>
