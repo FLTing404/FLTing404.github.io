@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cats | Liting Fang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .cats-intro {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+
+    .profile-card {
+      text-align: center;
+    }
+
+    .cat-avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 12px;
+    }
+
+    .profile-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .cat-name-zh {
+      font-weight: 400;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      margin-left: 4px;
+    }
+
+    .profile-card p {
+      color: var(--text-light);
+      font-size: 0.88rem;
+      margin-top: 4px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 700px) {
+      .profiles { grid-template-columns: 1fr; gap: 24px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .cat-avatar { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Same navbar as main page -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">FLT</a>
+    <a href="../cats/index.html" class="nav-link active" style="color: var(--accent);" data-en="My Cats" data-zh="我的猫">My Cats</a>
+    <button class="lang-toggle" id="langToggle">中文</button>
+  </nav>
+
+  <div class="layout">
+    <!-- Sidebar reuse: two cat avatars stacked -->
+    <aside class="sidebar">
+      <div class="profiles" style="display:flex; flex-direction:column; gap:24px; grid-template-columns:unset; margin-bottom:0; padding:0;">
+        <div class="profile-card">
+          <img src="img/million.jpg" alt="Million" class="cat-avatar" style="width:140px;height:140px;" />
+          <h3>Million <span class="cat-name-zh">方百万</span></h3>
+          <p data-en="The millionaire" data-zh="百万富翁本猫">The millionaire</p>
+        </div>
+        <div class="profile-card">
+          <img src="img/zeyi.jpg" alt="Zeyi" class="cat-avatar" style="width:140px;height:140px;" />
+          <h3>Zeyi <span class="cat-name-zh">白泽一</span></h3>
+          <p data-en="The mysterious one" data-zh="神秘猫猫">The mysterious one</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="content">
+      <section>
+        <h2 data-en="My Cats" data-zh="我的猫">My Cats</h2>
+        <div class="divider"></div>
+        <p class="cats-intro" data-en="The real bosses of this household. Million Fang and Bye Zeyi — one acts like a millionaire, the other remains a mystery." data-zh="这个家真正的老板。方百万和白泽一——一个活得像百万富翁，另一个永远高深莫测。">The real bosses of this household. Million Fang and Bye Zeyi — one acts like a millionaire, the other remains a mystery.</p>
+      </section>
+
+      <section>
+        <h2 data-en="Gallery" data-zh="相册">Gallery</h2>
+        <div class="divider"></div>
+        <div class="gallery-grid">
+          <div class="gallery-item"><img src="img/IMG_20260624_103959.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20260611_222107.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20260424_193122.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20260307_161602.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20260122_000427.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20251207_171119.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20251130_164047.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250929_234349.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250827_085311.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250625_194617.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250621_080327.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250524_202549.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250504_135542.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250418_084827_1.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250301_235914.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250222_155622.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20250126_030309.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20241212_201108.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20241206_173803.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20241002_091248.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20240810_201048.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20240601_160746.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20240601_160210.jpg" alt="cat" /></div>
+          <div class="gallery-item"><img src="img/IMG_20240317_110610_2.jpg" alt="cat" /></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
